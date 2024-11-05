@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+body {
+    background-color: #fdf5e6;
+    color: #333;
+}
+header {
+    background-color: #f7d8ba;
+    padding: 2rem;
+    text-align: center;
+}
+header nav a {
+    margin: 0 1rem;
+    color: #5a3a31;
+    font-weight: bold;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: #b86f50;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #b86f50;
+}
+.profile h2 span {
+    color: #b86f50;
+}
+.profile ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.profile ul li {
+    margin: 0.5rem 0;
+}
+.social-links a img {
+    width: 32px;
+    height: 32px;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+    filter: sepia(1);
+}
+#skills {
+    background-color: #5a3a31;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem 10%;
+}
+#skills h2 span {
+    color: #f7d8ba;
+}
+.skill-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.skill-group {
+    background-color: #a36a45;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.skill-group h3 {
+    color: #fdf5e6;
+    margin-bottom: 1rem;
+}
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    color: #fff;
+}
+.skill span {
+    background-color: #b86f50;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+}
+#experiences {
+    padding: 2rem;
+    text-align: center;
+}
+#experiences h2 span {
+    color: #b86f50;
+}
+.experience-item {
+    margin: 2rem 0;
+    border: 1px solid #b86f50;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.experience-item:hover {
+    transform: scale(1.02);
+}
+.experience-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.experience-item h3 {
+    color: #5a3a31;
+    margin-bottom: 0.5rem;
+}
+.experience-item p {
+    color: #333;
+    margin-bottom: 1rem;
+}
+.experience-item a {
+    color: #b86f50;
+    text-decoration: none;
+    font-weight: bold;
+}
+.experience-item a:hover {
+    text-decoration: underline;
+}
+/* 圖片的統一尺寸和樣式 */
+.experience-image {
+    width: 100%;  /* 讓圖片寬度佔滿父容器 */
+    max-width: 400px; /* 設置最大寬度，保持圖片清晰 */
+    height: auto; /* 讓圖片比例自動縮放 */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover; /* 確保圖片裁切效果一致 */
+}
+
+/* 修改 .profile 中的個人圖片大小 */
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #b86f50;
+    object-fit: cover; /* 保持比例並適當裁切 */
+}
