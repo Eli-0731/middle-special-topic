@@ -4,151 +4,202 @@
     box-sizing: border-box;
     font-family: 'Noto Sans TC', sans-serif;
 }
+
 body {
-    background-color: #fdf5e6;
-    color: #333;
+    background-color: #f6ede2; /* 更溫和的背景色 */
+    color: #3e2723;
+    font-family: 'Cormorant Garamond', 'Noto Sans TC', serif;
+    line-height: 1.6;
 }
-header {
-    background-color: #f7d8ba;
-    padding: 2rem;
-    text-align: center;
+
+/* 調整標題字體和顏色 */
+header, h1, h2, h3, nav a {
+    font-family: 'Cormorant Garamond', serif;
 }
-header nav a {
-    margin: 0 1rem;
+
+header, h2, h3, nav a {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
     color: #5a3a31;
+}
+
+/* 配置 section 小標題字體 */
+#skills h2, #experiences h2, .skill-group h3, .experience-item h3 {
+    font-weight: 600;
+    color: #8b4e35;
+}
+
+/* header 設置 */
+header {
+    background-color: #f0dcc0;
+    padding: 2.5rem 0;
+    text-align: center;
+    border-bottom: 2px solid #d9b899;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* 加入些微陰影 */
+}
+
+header nav a {
+    margin: 0 1.5rem;
+    color: #8b4e35;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
+
 header nav a:hover {
     color: #b86f50;
 }
+
+/* 個人資料樣式 */
 .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
+
 .profile img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 3px solid #b86f50;
+    border: 4px solid #8b4e35;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.2rem;
 }
+
 .profile h2 span {
     color: #b86f50;
 }
+
 .profile ul {
     list-style: none;
     text-align: center;
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
+    font-style: italic;
+    color: #5a3a31;
 }
-.profile ul li {
-    margin: 0.5rem 0;
-}
+
+/* 社交連結的顏色和效果 */
 .social-links a img {
     width: 32px;
     height: 32px;
-    margin: 0 0.5rem;
+    margin: 0 0.6rem;
     vertical-align: middle;
+    filter: sepia(0.6) contrast(1.1);
+    transition: transform 0.3s;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
     filter: sepia(1);
 }
+
+/* 技能區域 */
 #skills {
     background-color: #5a3a31;
     color: #fff;
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
-    border-radius: 10px;
-    margin: 2rem 10%;
+    border-radius: 12px;
+    margin: 2.5rem 8%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 #skills h2 span {
     color: #f7d8ba;
 }
+
 .skill-container {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    gap: 1rem;
+    gap: 1.5rem;
 }
+
 .skill-group {
     background-color: #a36a45;
-    border-radius: 8px;
-    padding: 1rem;
+    border-radius: 10px;
+    padding: 1.2rem;
     width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
+
 .skill-group h3 {
     color: #fdf5e6;
     margin-bottom: 1rem;
 }
+
 .skill {
     display: flex;
     justify-content: space-between;
-    margin: 0.5rem 0;
+    margin: 0.6rem 0;
     color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
+
 .skill span {
     background-color: #b86f50;
-    padding: 0 0.5rem;
+    padding: 0.3rem 0.6rem;
     border-radius: 5px;
 }
+
+/* 經歷區域 */
 #experiences {
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
+    color: #3e2723;
 }
+
 #experiences h2 span {
-    color: #b86f50;
+    color: #8b4e35;
 }
+
 .experience-item {
     margin: 2rem 0;
-    border: 1px solid #b86f50;
-    border-radius: 8px;
-    padding: 1.5rem;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    border: 1px solid #d9b899;
+    border-radius: 10px;
+    padding: 1.8rem;
+    background-color: #fdf5e6;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
+
 .experience-item:hover {
     transform: scale(1.02);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
+
 .experience-image {
     width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
+    object-fit: cover;
 }
+
 .experience-item h3 {
-    color: #5a3a31;
+    color: #8b4e35;
     margin-bottom: 0.5rem;
+    font-size: 1.3rem;
 }
+
 .experience-item p {
     color: #333;
     margin-bottom: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
+
 .experience-item a {
     color: #b86f50;
     text-decoration: none;
     font-weight: bold;
-}
-.experience-item a:hover {
-    text-decoration: underline;
-}
-/* 圖片的統一尺寸和樣式 */
-.experience-image {
-    width: 100%;  /* 讓圖片寬度佔滿父容器 */
-    max-width: 400px; /* 設置最大寬度，保持圖片清晰 */
-    height: auto; /* 讓圖片比例自動縮放 */
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    object-fit: cover; /* 確保圖片裁切效果一致 */
+    transition: text-decoration 0.3s ease;
 }
 
-/* 修改 .profile 中的個人圖片大小 */
-.profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 3px solid #b86f50;
-    object-fit: cover; /* 保持比例並適當裁切 */
+.experience-item a:hover {
+    text-decoration: underline;
 }
